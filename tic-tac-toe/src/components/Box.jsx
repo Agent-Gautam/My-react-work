@@ -1,7 +1,7 @@
 export default function Box(props){
-    props.settext(props.key);
+    
     return (
-        <button className="box">
+        <button className="box" onClick={()=>props.fun(props.id)}>
             {props.text}
         </button>
     )
